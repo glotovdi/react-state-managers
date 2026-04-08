@@ -1,14 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { apiRTK } from "./rtq/redux-toolkit-query";
+import { apiRTKQ } from "./rtkq/redux-toolkit-query";
 import likesReducer from "./slices/likes";
 
 export const store = configureStore({
   reducer: {
     likes: likesReducer,
-    [apiRTK.reducerPath]: apiRTK.reducer,
+    [apiRTKQ.reducerPath]: apiRTKQ.reducer,
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(apiRTK.middleware),
+    getDefaultMiddleware().concat(apiRTKQ.middleware),
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

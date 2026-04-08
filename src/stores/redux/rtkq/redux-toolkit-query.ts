@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-export const apiRTK = createApi({
+export const apiRTKQ = createApi({
   reducerPath: "api",
 
   baseQuery: fetchBaseQuery({
@@ -17,4 +17,4 @@ export const apiRTK = createApi({
   }),
 });
 
-export const { useGetUsersQuery, useGetUserByIdQuery } = apiRTK;
+export const { useGetUsersQuery, useGetUserByIdQuery } = apiRTKQ;
