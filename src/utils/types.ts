@@ -1,3 +1,3 @@
-export type TypeFromObject<T extends Object> = {
+export type TypeFromObject<T extends object> = {
   [K in keyof T]: T[K];
 };
