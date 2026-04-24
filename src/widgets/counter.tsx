@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Context } from "../stores/context";
-import type { RootState } from "../stores/redux";
-import { increment } from "../stores/redux/slices/likes";
-import { useZustandStore } from "../stores/zustand";
+import { Context } from "../app/stores/context";
+import type { RootState } from "../app/stores/redux";
+import { increment } from "../app/stores/redux/slices/likes";
+import { useZustandStore } from "../app/stores/zustand";
 
 export function Counter() {
   const { count, setCount } = useContext(Context);
