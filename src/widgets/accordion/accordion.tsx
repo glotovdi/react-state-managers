@@ -42,8 +42,6 @@ export default function App() {
     });
   };
 
-  const checkStatus = (id) => id === openId;
-
   return (
     <div className="app">
       <h1>Accordion Component</h1>
@@ -64,7 +62,7 @@ export default function App() {
             </button>
             <div
               className={
-                checkStatus(item.id)
+                item.id == openId
                   ? "accordion-content accordion-content--opened"
                   : "accordion-content "
               }

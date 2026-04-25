@@ -16,6 +16,9 @@ export const Header = () => {
         <Link className="m-1 underline" to="/accordion">
           Accordion
         </Link>
+        <Link className="m-1 underline" to="/carousel">
+          Carousel
+        </Link>
       </div>
     </>
   );

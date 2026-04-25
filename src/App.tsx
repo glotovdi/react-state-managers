@@ -1,7 +1,7 @@
 import { ConfigProvider } from "antd";
 import "antd/dist/reset.css";
 import ruRU from "antd/locale/ru_RU";
-import "./App.css";
+import "./App.scss";
 import { CustomRoutes } from "./app/route/route";
 
 function App() {
