@@ -182,6 +182,14 @@
     border-right-color: var(--border);
   }
 } */
+
+.m-1 {
+  margin: 10px;
+}
+
+.p-1 {
+  padding: 10px;
+}
 .app {
   max-width: 700px;
   margin: 50px auto;
@@ -377,5 +385,82 @@ h1 {
     color: #666;
     font-size: 14px;
     font-weight: 600;
+  }
+}
+
+.tictac-layout {
+  .app {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 35px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .status {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #2196f3;
+    min-height: 36px;
+  }
+
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 30px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .cell {
+    aspect-ratio: 1;
+    font-size: 48px;
+    font-weight: bold;
+    background: white;
+    border: 3px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cell:hover:not(.filled) {
+    background: #f0f0f0;
+    border-color: #2196f3;
+  }
+
+  .cell.filled {
+    cursor: not-allowed;
+  }
+
+  .restart-button {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .restart-button:hover {
+    background: #45a049;
+    transform: scale(1.05);
   }
 }

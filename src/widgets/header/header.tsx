@@ -19,6 +19,9 @@ export const Header = () => {
         <Link className="m-1 underline" to="/carousel">
           Carousel
         </Link>
+        <Link className="m-1 underline" to="/tictac">
+          Tictac
+        </Link>
       </div>
     </>
   );

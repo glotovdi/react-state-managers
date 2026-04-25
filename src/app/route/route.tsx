@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { AccordionPage } from "../../pages/AccordionPage";
 import { CarouselPage } from "../../pages/CarouselPage";
 import { FetchPage } from "../../pages/FetchPage";
+import { TictacPage } from "../../pages/TictacPage";
 import { TimerPage } from "../../pages/TimerPage";
 import { TodoListPage } from "../../pages/TodoListPage";
 
@@ -13,6 +14,7 @@ export const CustomRoutes = () => {
       <Route path="/fetch" element={<FetchPage />} />
       <Route path="/accordion" element={<AccordionPage />} />
       <Route path="/carousel" element={<CarouselPage />} />
+      <Route path="/tictac" element={<TictacPage />} />
     </Routes>
   );
 };
